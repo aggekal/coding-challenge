@@ -9,6 +9,7 @@ const Main = ({name2,checkState}) => {
 var c=null;
 var startButtons=null;
 var randomNumbers = [];
+
 	const [info2,setInfo2] = useState();
 	const [credits,setCredits] = useState(100);
 	const [Round,setRound] = useState(1);
