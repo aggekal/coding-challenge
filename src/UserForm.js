@@ -24,10 +24,7 @@ const UserForm = ({ onAdd }) => {
 				
 					<div style={{marginTop: 50}}><input className="btn" type="submit" value="Play"/></div>
 
-
 				</form>
-
-
 
 			</div>
 		)
