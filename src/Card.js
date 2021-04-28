@@ -56,8 +56,9 @@ const Card = ({faceUp,clickable,onFlip,points}) => {
 
 
 
+
 useEffect(() => {
-    console.log('Prop Received: ',faceUp);
+    console.log('Prop Received 3: ',faceUp);
     setFaceUp(faceUp)
 }, [faceUp])
 
