@@ -1,8 +1,6 @@
 next-version: 1.0.0
 branches:
   master:
-    mode: ContinuousDelivery
-    tag: rc
     increment: Patch
-    prevent-increment-of-merged-branch-version: true
+    is-release-branch: true
 
