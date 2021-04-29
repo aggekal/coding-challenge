@@ -1,6 +1,8 @@
 next-version: 1.0.0
+assembly-versioning-format: '{Major}.{Minor}.{Patch}.{env:BUILDCOUNT ?? 0}'
 branches:
   master:
-    increment: Patch
+    increment: Minor
     is-release-branch: true
+    tag: rc
 
