@@ -9,6 +9,7 @@ jobs:
         with:
           versionSpec: '5.x'
           useConfigFile: true
+          configFilePath: VersionConfig.yml
       - name: Checkout
         uses: actions/checkout@v2
         with:
