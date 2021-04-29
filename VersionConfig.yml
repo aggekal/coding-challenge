@@ -18,7 +18,7 @@ merge-message-formats: {}
 branches:
   main:
     mode: ContinuousDelivery
-    tag: 'rc'
+    tag: 'myTag'
     increment: Patch
     prevent-increment-of-merged-branch-version: true
     track-merge-target: false
