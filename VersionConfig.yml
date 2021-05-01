@@ -15,11 +15,9 @@ commits-since-version-source-padding: 4
 commit-message-incrementing: Enabled
 merge-message-formats: {}
 branches:
-  release:
+  master:
     mode: ContinuousDelivery
     increment: Major
-    prevent-increment-of-merged-branch-version: true
-    track-merge-target: false
-    tracks-release-branches: false
-    is-release-branch: true
+    prevent-increment-of-merged-branch-version: false
+
 
