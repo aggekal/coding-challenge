@@ -1,6 +1,6 @@
 assembly-versioning-scheme: MajorMinorPatch
 assembly-file-versioning-scheme: MajorMinorPatchTag
-assembly-informational-format: '{InformationalVersion}'
+assembly-file-versioning-format: '{Major}.{Minor}.{Patch}.{WeightedPreReleaseNumber ?? 0}'
 mode: ContinuousDelivery
 increment: Inherit
 continuous-delivery-fallback-tag: ci
@@ -15,12 +15,11 @@ commits-since-version-source-padding: 4
 commit-message-incrementing: Enabled
 merge-message-formats: {}
 branches:
-  pull-request:
+  release:
     mode: ContinuousDelivery
-    tag: 'myTag'
-    increment: Patch
+    increment: Major
     prevent-increment-of-merged-branch-version: true
     track-merge-target: false
     tracks-release-branches: false
-    is-release-branch: false
+    is-release-branch: true
 
